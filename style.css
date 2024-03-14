@@ -144,10 +144,7 @@ body{
 
 
 #hero{
-    background: url(img/Charlotte_Tilbury_Luxury_Palette_-_The_Dolce_Vita_Color-Coded_Eyeshadow_Palette-removebg-preview.png);
-    background-repeat: no-repeat;
-
-    background-position: right;
+   
     background-color: #e7eaf3;
 
     height: 90vh;
@@ -155,12 +152,20 @@ body{
     padding: 0px 80px ;
    
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
 
 }
+.hero-content {
+    flex: 1; /* Take remaining space */
+}
+
+.home__banner img {
+    max-width: 100%; /* Ensure image does not exceed container */
+    height: auto;
+}
+
 #hero h4{
     padding-bottom: 15px;
 
@@ -188,6 +193,7 @@ body{
     background:#e49ab0 ;
     transition: 1s;
 }
+
 
 
 
@@ -925,6 +931,8 @@ font-size: 26px;}
     padding: 10px 30px;
    
 }
+
+
 h1{
     font-size: 38px;
 }
@@ -932,9 +940,32 @@ h2{
     font-size: 32px;
 }
 #hero{
-    padding: 0 20px;
-    background-position: 55%;
+    background-color: #e7eaf3;
+    padding: 0px 10px; /* Reduce padding for smaller screens */
+    display: flex;
+    flex-direction: column; 
+
 }
+.hero-content, .home__banner {
+    width: 100%; /* Make both sections take full width on smaller screens */
+}
+
+.home__banner {
+    max-width: 75%; /* Set a max-width for the banner to prevent it from exceeding the container */
+}
+
+
+.home__banner img {
+    max-width: 100%; /* Ensure image does not exceed container */
+    height: auto;
+}
+
+
+
+
+
+
+    
 
 #feature{
     justify-content: space-between;
